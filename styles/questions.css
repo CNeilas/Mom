@@ -21,6 +21,8 @@
   box-shadow: -9px 8px 10px 0px rgba(153, 153, 153, 1);
   border-radius: 20px;
   margin: 10px;
+  text-decoration: none;
+  color: black;
 }
 
 .question p {
@@ -32,7 +34,7 @@
   height: 0px;
 }
 
-.question:hover p {
+.question:focus p {
   display: block;
   transition:opacity 1s;
   opacity: 1;
