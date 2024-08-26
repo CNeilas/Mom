@@ -1,0 +1,108 @@
+.about-me {
+  background-color: rgb(229, 229, 229);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-box {
+  border-top-right-radius: 3%;
+  border-bottom-right-radius: 3%;
+  border-top-left-radius: 3%;
+  border-bottom-left-radius: 3%;
+  width: 950px;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: -9px 11px 5px 0px rgba(153, 153, 153, 1);
+  -moz-box-shadow: -9px 11px 5px 0px rgba(153, 153, 153, 1);
+  box-shadow: -9px 11px 10px 0px rgba(153, 153, 153, 1);
+}
+
+.about-text {
+  border-top-right-radius: 3%;
+  border-bottom-right-radius: 3%;
+  width: 475px;
+  height: 100%;
+  background-color: #ffffff;
+  
+}
+
+.about-text p {
+  text-align: left;
+  padding: 10px;
+  font-size: 22px;
+  line-height: 35px;
+}
+
+.about-text h2 {
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.about-image {
+  border-top-left-radius: 3%;
+  border-bottom-left-radius: 3%;
+  height: 100%;
+  width: 475px;
+  background-image: url("../photo/about.jfif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.link-button {
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  margin-top: 20px;
+  width: 950px;
+  height: 70px;
+  font-weight: 900;
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  -webkit-box-shadow: -9px 11px 5px 0px rgba(153, 153, 153, 1);
+  -moz-box-shadow: -9px 11px 5px 0px rgba(153, 153, 153, 1);
+  box-shadow: -9px 8px 10px 0px rgba(153, 153, 153, 1);
+  border-radius: 20px;
+}
+
+.link-button:hover {
+  background-color: rgb(229, 229, 229);
+  transition: 1s;
+}
+
+.down-button {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 30px;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  border-radius: 50%;
+  -webkit-box-shadow: -9px 11px 5px 0px rgba(153, 153, 153, 1);
+  -moz-box-shadow: -9px 11px 5px 0px rgba(153, 153, 153, 1);
+  box-shadow: -3px 4px 10px 5px rgba(153, 153, 153, 1);
+  transition: 1s;
+}
+
+.down-button:hover {
+  background-color: #ffffff8f;
+  scale: 1.05;
+  transition: 1s;
+}

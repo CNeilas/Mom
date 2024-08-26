@@ -1,0 +1,164 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  height: 600px;
+  overflow: hidden;
+  text-align: center;
+  margin: 20px;
+  font-size: 14px;
+  -webkit-box-shadow: -9px 15px 11px 5px rgba(0, 0, 0, 0.486);
+  -moz-box-shadow: -9px 15px 11px 5px rgba(0, 0, 0, 0.486);
+  box-shadow: -5px 9px 5px 2px rgba(0, 0, 0, 0.486);
+  background-color: white;
+}
+
+.product:hover {
+    scale: 1.05;
+}
+
+img {
+  width: 400px;
+  height: 400px;
+}
+
+.product h2 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.none {
+  display: none;
+}
+
+.img1 {
+  width: 400px;
+  height: 400px;
+  background-image: url("/photo/atsakomybe.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.img2 {
+  width: 400px;
+  height: 400px;
+  background-image: url("/photo/baime.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.img3 {
+  width: 400px;
+  height: 400px;
+  background-image: url("/photo/boxhead.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+.img4 {
+  width: 400px;
+  height: 400px;
+  background-image: url("/photo/meile.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+.img5 {
+  width: 400px;
+  height: 400px;
+  background-image: url("/photo/numerologija2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.img6 {
+  width: 400px;
+  height: 400px;
+  background-image: url("/photo/numerologija1.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+
+.img7 {
+  width: 400px;
+  height: 400px;
+  background-image: url("/photo/mom2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.img8 {
+  width: 400px;
+  height: 400px;
+  background-image: url("/photo/mom3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.img9 {
+  width: 400px;
+  height: 400px;
+  background-image: url("/photo/antsvoris.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.img10 {
+  width: 400px;
+  height: 400px;
+  background-image: url("/photo/personal.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.img11 {
+  width: 400px;
+  height: 400px;
+  background-image: url("/photo/transformation.webp");
+  background-position: center;
+  background-size: cover;
+}
+.img12 {
+  width: 400px;
+  height: 400px;
+  background-image: url("/photo/social.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+
+.img13 {
+  width: 400px;
+  height: 400px;
+  background-image: url("/photo/practices.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.img14 {
+  width: 400px;
+  height: 400px;
+  background-image: url("/photo/regression.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+ul {
+  text-align: left;
+  font-size: 15px;
+  margin: 20px;
+}
+
+li {
+  margin: 5px;
+}
+
+.button {
+  text-decoration: none;
+  color: white;
+  background-color: #78B657;
+  border-radius: 40px;
+  padding: 14.5px 100px;
+  margin-bottom: 10px;
+}
