@@ -27,11 +27,7 @@
   color: black;
 }
 
-.questions p {
-  font-size: 30px;
-}
-
-ul {
+.question ul {
   align-self: start;
   font-size: 30px;
 }

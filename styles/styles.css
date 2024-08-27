@@ -5,11 +5,15 @@
 @import url("contact.css");
 @import url("footer.css");
 @import url("questions.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+
 }
 html {
     scroll-behavior: smooth;

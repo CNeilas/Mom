@@ -6,6 +6,10 @@ footer {
     justify-content: space-around;
 }
 
+footer h1 {
+    font-size: 40px;
+}
+
 .socials {
     display: flex;
     align-items: center;
