@@ -85,3 +85,17 @@ document
   });
   
   //dropdown
+  document.querySelector('.menu-btn').addEventListener('click', function () {
+    document.querySelector('.links').classList.toggle('show');
+  });
+
+  // Optional: Close the menu when clicking outside of it
+  document.addEventListener('click', function (event) {
+    const isClickInside = document.querySelector('.menu-btn').contains(event.target);
+    const isLinksClick = document.querySelector('.links').contains(event.target);
+
+    if (!isClickInside && !isLinksClick) {
+      document.querySelector('.links').classList.remove('show');
+    }
+  });
+

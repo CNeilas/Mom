@@ -1,7 +1,7 @@
 .about-me {
   background-color: rgb(229, 229, 229);
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,8 +13,8 @@
   border-bottom-right-radius: 3%;
   border-top-left-radius: 3%;
   border-bottom-left-radius: 3%;
-  width: 950px;
-  height: 50%;
+  max-width: 950px;
+  height: 520px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,13 +30,12 @@
   height: 100%;
   background-color: #ffffff;
   overflow-wrap: normal;
-  
 }
 
 .about-text p {
   text-align: left;
-  padding: 10px;
-  font-size: 22px;
+  padding: 15px;
+  font-size: 16px;
   line-height: 35px;
 }
 
@@ -110,120 +109,99 @@
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .about-box {
-    width: 90%;
-    height: auto;
-    flex-direction: column;
+@media only screen and (max-width: 760px) {
+  .about-image {
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+    border-bottom-left-radius: 0%;
   }
-
-  .about-text, .about-image {
-    width: 100%;
-    height: auto;
-    border-radius: 0;
-  }
-
-  .about-text p, .about-text h2 {
-    font-size: 18px;
-    line-height: 28px;
-    padding: 5px;
-  }
-
-  .link-button {
-    width: 90%;
-    height: auto;
-    font-size: 24px;
+  .about-text {
+    border-bottom-left-radius: 3%;
+    border-bottom-right-radius: 3%;
+    border-top-right-radius: 0%;
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 767px) {
+@media only screen and (min-width: 761px) and (max-width: 960px) {
   .about-box {
-    width: 90%;
-    height: auto;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    width: 610px;
+    height: 400px;
   }
 
-  .about-text, .about-image {
-    width: 100%;
-    height: auto;
+  .about-image {
+    width: 305px;
+    height: 100%;
   }
-
-  .about-text p, .about-text h2 {
-    font-size: 20px;
-    line-height: 30px;
-    padding: 8px;
+  .about-text p {
+    font-size: 16px;
+    line-height: 24px
   }
 
   .link-button {
-    width: 90%;
-    height: auto;
-    font-size: 26px;
+    width: 610px;
+  }
+}
+
+@media only screen and (min-width: 521px) and (max-width: 760px) {
+  .about-box {
+    margin-top: 20px;
+    flex-direction: column;
+    width: 380px;
+    height: 700px;
+  }
+
+  .about-text p {
+    font-size: 13px;
+    line-height: normal;
+  }
+
+  .about-image {
+    width: 380px;
+    
+  }
+
+  .about-text {
+    width: 380px;
+    height: 400px;
+  }
+
+  .link-button {
+    width: 380px;
+    font-size: 24px;
+  }
+ 
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 520px) {
+  .about-box {
+    margin-top: 20px;
+    flex-direction: column;
+    width: 280px;
+    height: 600px;
+  }
+   
+  .about-image {
+    width: 280px;
+  }
+
+  .about-text {
+    width: 280px;
+  }
+
+  .about-text p {
+    font-size: 12px;
+    line-height: normal;
+  }
+
+  .link-button {
+    width: 280px;
+    font-size: 16px;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .about-box {
-    width: 80%;
-    height: auto;
-    flex-direction: row;
-  }
 
-  .about-text, .about-image {
-    width: 50%;
-    height: auto;
-  }
 
-  .about-text p, .about-text h2 {
-    font-size: 22px;
-    line-height: 32px;
-    padding: 10px;
-  }
-
-  .link-button {
-    width: 80%;
-    height: auto;
-    font-size: 28px;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .about-box {
-    width: 950px;
-    height: 50%;
-    flex-direction: row;
-  }
-
-  .about-text, .about-image {
-    width: 50%;
-    height: 100%;
-  }
-
-  .link-button {
-    width: 950px;
-    height: 70px;
-    font-size: 30px;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .about-box {
-    width: 950px;
-    height: 50%;
-    flex-direction: row;
-  }
-
-  .about-text, .about-image {
-    width: 50%;
-    height: 100%;
-  }
-
-  .link-button {
-    width: 950px;
-    height: 70px;
-    font-size: 30px;
-  }
-}

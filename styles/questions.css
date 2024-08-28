@@ -10,13 +10,12 @@
 }
 
 .question {
-  width: auto;
+  width: 950px;
   padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 950px;
   padding: 25px;
   -webkit-box-shadow: -9px 11px 5px 0px rgba(153, 153, 153, 1);
   -moz-box-shadow: -9px 11px 5px 0px rgba(153, 153, 153, 1);
@@ -25,6 +24,15 @@
   margin: 10px;
   text-decoration: none;
   color: black;
+}
+
+.sekcija {
+  width: 950px;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgb(229, 229, 229);
+  text-align: center;
 }
 
 .question ul {
@@ -64,4 +72,53 @@
 
 .question:focus iframe {
   display: block;
+}
+
+@media only screen and (min-width: 761px) and (max-width: 960px) {
+  .question {
+    width: 610px;
+  }
+
+  .sekcija {
+    width: 610px;
+  }
+}
+
+@media only screen and (min-width: 521px) and (max-width: 760px) {
+  .question {
+    width: 380px;
+   }
+  
+   h2 {
+    font-size: 24px;
+   }
+  
+   .sekcija {
+    font-size: 24px;
+    width: 380px;
+   }
+
+   .question ul li {
+    font-size: 16px;
+   }
+ 
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 520px) {
+  .question {
+    width: 280px;
+   }
+  
+   h2 {
+    font-size: 16px;
+   }
+  
+   .sekcija {
+    font-size: 16px;
+    width: 280px;
+   }
+
+   .question ul li {
+    font-size: 16px;
+   }
 }
