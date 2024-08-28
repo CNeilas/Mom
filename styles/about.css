@@ -107,3 +107,123 @@
   scale: 1.05;
   transition: 1s;
 }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .about-box {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .about-text, .about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .about-text p, .about-text h2 {
+    font-size: 18px;
+    line-height: 28px;
+    padding: 5px;
+  }
+
+  .link-button {
+    width: 90%;
+    height: auto;
+    font-size: 24px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .about-box {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .about-text, .about-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-text p, .about-text h2 {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 8px;
+  }
+
+  .link-button {
+    width: 90%;
+    height: auto;
+    font-size: 26px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-box {
+    width: 80%;
+    height: auto;
+    flex-direction: row;
+  }
+
+  .about-text, .about-image {
+    width: 50%;
+    height: auto;
+  }
+
+  .about-text p, .about-text h2 {
+    font-size: 22px;
+    line-height: 32px;
+    padding: 10px;
+  }
+
+  .link-button {
+    width: 80%;
+    height: auto;
+    font-size: 28px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-box {
+    width: 950px;
+    height: 50%;
+    flex-direction: row;
+  }
+
+  .about-text, .about-image {
+    width: 50%;
+    height: 100%;
+  }
+
+  .link-button {
+    width: 950px;
+    height: 70px;
+    font-size: 30px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .about-box {
+    width: 950px;
+    height: 50%;
+    flex-direction: row;
+  }
+
+  .about-text, .about-image {
+    width: 50%;
+    height: 100%;
+  }
+
+  .link-button {
+    width: 950px;
+    height: 70px;
+    font-size: 30px;
+  }
+}
