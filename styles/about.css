@@ -9,6 +9,7 @@
 }
 
 .about-box {
+  margin-top: 20px;
   border-top-right-radius: 3%;
   border-bottom-right-radius: 3%;
   border-top-left-radius: 3%;
@@ -107,6 +108,16 @@
   transition: 1s;
 }
 
+#iframe1 {
+  margin: 10px;
+  width: 920px;
+  height: 400px;
+}
+
+#iframe2 {
+  height: 450px;
+  width: 950px;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 760px) {
@@ -143,6 +154,17 @@
   .link-button {
     width: 610px;
   }
+
+  #iframe1 {
+    margin: 10px;
+    width: 580px;
+    height: 300px;
+  }
+
+  #iframe2 {
+    height: 300px;
+    width: 610px;
+  }
 }
 
 @media only screen and (min-width: 521px) and (max-width: 760px) {
@@ -173,6 +195,17 @@
     font-size: 24px;
   }
  
+  #iframe1 {
+    margin: 10px;
+    width: 340px;
+    height: 200px;
+  }
+
+  #iframe2 {
+    height: 250px;
+    width: 380px;
+  }
+
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 520px) {
@@ -199,6 +232,17 @@
   .link-button {
     width: 280px;
     font-size: 16px;
+  }
+
+  #iframe1 {
+    margin: 10px;
+    width: 240px;
+    height: 200px;
+  }
+
+  #iframe2 {
+    height: 200px;
+    width: 280px;
   }
 }
 
