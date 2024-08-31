@@ -53,7 +53,7 @@ img {
   width: 380px;
   height: 380px;
   border-radius: 20px;
-  background-image: url("/photo/atsakomybe.jpg");
+  background-image: url("../photo/atsakomybe.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -62,7 +62,7 @@ img {
   width: 380px;
   height: 380px;
   border-radius: 20px;
-  background-image: url("/photo/baime.jpg");
+  background-image: url("../photo/baime.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -71,7 +71,7 @@ img {
   width: 380px;
   height: 380px;
   border-radius: 20px;
-  background-image: url("/photo/boxhead.webp");
+  background-image: url("../photo/boxhead.webp");
   background-position: center;
   background-size: cover;
 }
@@ -80,7 +80,7 @@ img {
   width: 380px;
   height: 380px;
   border-radius: 20px;
-  background-image: url("/photo/meile.webp");
+  background-image: url("../photo/meile.webp");
   background-position: center;
   background-size: cover;
 }
@@ -89,7 +89,7 @@ img {
   width: 380px;
   height: 380px;
   border-radius: 20px;
-  background-image: url("/photo/numerologija2.jpg");
+  background-image: url("../photo/numerologija2.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -98,7 +98,7 @@ img {
   width: 380px;
   height: 380px;
   border-radius: 20px;
-  background-image: url("/photo/numerologija1.jpeg");
+  background-image: url("../photo/numerologija1.jpeg");
   background-position: center;
   background-size: cover;
 }
@@ -107,7 +107,7 @@ img {
   width: 380px;
   height: 380px;
   border-radius: 20px;
-  background-image: url("/photo/mom2.jpg");
+  background-image: url("../photo/mom2.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -116,7 +116,7 @@ img {
   width: 380px;
   height: 380px;
   border-radius: 20px;
-  background-image: url("/photo/mom3.jpg");
+  background-image: url("../photo/mom3.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -125,7 +125,7 @@ img {
   width: 380px;
   height: 380px;
   border-radius: 20px;
-  background-image: url("/photo/antsvoris.jpg");
+  background-image: url("../photo/antsvoris.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -134,7 +134,7 @@ img {
   width: 380px;
   height: 380px;
   border-radius: 20px;
-  background-image: url("/photo/personal.jpg");
+  background-image: url("../photo/personal.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -143,7 +143,7 @@ img {
   width: 380px;
   height: 380px;
   border-radius: 20px;
-  background-image: url("/photo/transformation.webp");
+  background-image: url("../photo/transformation.webp");
   background-position: center;
   background-size: cover;
 }
@@ -151,7 +151,7 @@ img {
   width: 380px;
   height: 380px;
   border-radius: 20px;
-  background-image: url("/photo/social.jpeg");
+  background-image: url("../photo/social.jpeg");
   background-position: center;
   background-size: cover;
 }
@@ -160,7 +160,7 @@ img {
   width: 380px;
   height: 380px;
   border-radius: 20px;
-  background-image: url("/photo/practices.jpg");
+  background-image: url("../photo/practices.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -169,7 +169,7 @@ img {
   width: 380px;
   height: 380px;
   border-radius: 20px;
-  background-image: url("/photo/regression.jpg");
+  background-image: url("../photo/regression.jpg");
   background-position: center;
   background-size: cover;
 }
