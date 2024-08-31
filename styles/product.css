@@ -17,6 +17,7 @@
 
 .box-container {
   min-height: 150vh;
+  width: 100%;
 }
 
 .product:hover {
@@ -194,4 +195,52 @@ li {
 
 .button:hover {
   background-color: rgba(91, 126, 72, 0.827);
+}
+
+@media only screen and (max-width: 959px) {
+
+
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 960px) {
+  .box {margin-bottom: 20px;}
+}
+
+@media only screen and (min-width: 760px) and (max-width: 960px) {
+  .box {
+    width: 100%;
+    margin-left: 0px !important;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image {
+    width: 90% !important;
+  }
+
+  .product {
+    margin: 0px;
+    width: 40%;
+  }
+
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 759px) {
+  .box {
+    width: 100%;
+    margin-left: 0px !important;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image {
+    width: 90% !important;
+  }
+
+  .product {
+    margin: 0px;
+    width: 90%;
+  }
 }

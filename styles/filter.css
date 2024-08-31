@@ -1,47 +1,65 @@
 .filter {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    padding: 5px;
-    width: 350px;
-    -webkit-box-shadow: -9px 15px 11px 5px rgba(0, 0, 0, 0.486);
-    -moz-box-shadow: -9px 15px 11px 5px rgba(0, 0, 0, 0.486);
-    box-shadow: -5px 9px 5px 2px rgba(0, 0, 0, 0.486);
-    height: 500px;
-    border-radius: 20px;
-    background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+  width: 350px;
+  -webkit-box-shadow: -9px 15px 11px 5px rgba(0, 0, 0, 0.486);
+  -moz-box-shadow: -9px 15px 11px 5px rgba(0, 0, 0, 0.486);
+  box-shadow: -5px 9px 5px 2px rgba(0, 0, 0, 0.486);
+  height: 500px;
+  border-radius: 20px;
+  background-color: white;
 }
 
 .filter button {
-    background-color: white;
-    border: none;
-    width: 100%;
-    padding: 20px;
-    border-radius: 20px;
-    transition: 1s;
-    font-size: 20px;
+  background-color: white;
+  border: none;
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  transition: 1s;
+  font-size: 20px;
 }
 
 .filter button:hover {
-    background-color: rgb(184, 184, 184);
-    cursor: pointer;
-    transition: 1s;
+  background-color: rgb(184, 184, 184);
+  cursor: pointer;
+  transition: 1s;
 }
 
 .filter button:focus {
-    background-color: rgb(184, 184, 184);
+  background-color: rgb(184, 184, 184);
 }
 
 .filter-box {
-    margin-top: 200px;
-    margin-left: 50px;
+  margin-top: 200px;
+  margin-left: 50px;
 }
 
 .selected {
-    background-color: gray;
+  background-color: gray;
 }
 
 .active {
-    background-color: gray;
+  background-color: gray;
+}
+
+@media only screen and (max-width: 959px) {
+  .filter {
+    width: 90%;
+  }
+
+.filter-box {
+    width: 90%;
+}
+
+  .box-container {
+    width: 100% !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
 }
