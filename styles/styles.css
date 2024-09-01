@@ -28,6 +28,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
+
 }
 
 .box-container {
@@ -41,16 +42,15 @@ main {
     margin-left: 100px;
 }
 
-body {
-    /*
-    background-image: url("photo/background.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    */
+.course {
+    width: 90%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: -9px 11px 5px 0px rgba(153, 153, 153, 1);
+    -moz-box-shadow: -9px 11px 5px 0px rgba(153, 153, 153, 1);
+    box-shadow: -9px 8px 10px 0px rgba(153, 153, 153, 1);
 }
-
 
 
   

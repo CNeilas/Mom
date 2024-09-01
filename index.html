@@ -9,13 +9,27 @@
       src="https://kit.fontawesome.com/40638f2f07.js"
       crossorigin="anonymous"
     ></script>
-     <!-- MailerLite Universal -->
-     <script>
-      (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-      .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-      n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-      (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-      ml('account', '963089');
+    <!-- MailerLite Universal -->
+    <script>
+      (function (w, d, e, u, f, l, n) {
+        (w[f] =
+          w[f] ||
+          function () {
+            (w[f].q = w[f].q || []).push(arguments);
+          }),
+          (l = d.createElement(e)),
+          (l.async = 1),
+          (l.src = u),
+          (n = d.getElementsByTagName(e)[0]),
+          n.parentNode.insertBefore(l, n);
+      })(
+        window,
+        document,
+        "script",
+        "https://assets.mailerlite.com/js/universal.js",
+        "ml"
+      );
+      ml("account", "963089");
     </script>
     <!-- End MailerLite Universal -->
     <link rel="stylesheet" href="styles/styles.css" />
@@ -28,6 +42,7 @@
           <a href="index.html">Apie mane</a>
           <a href="paslaugos.html">Paslaugos</a>
           <a href="sesijos.html">Sesijos</a>
+          <a href="kursai.html">Kursai</a>
         </div>
       </nav>
     </header>
@@ -52,7 +67,7 @@
         </div>
         <a class="link-button" href="sesijos.html">Sesijos</a>
         <a class="link-button" href="paslaugos.html">Parduotuvė</a>
-        <a class="link-button" href="#.html">Hipnoterapijos Mokymai</a>
+        <a class="link-button" href="kursai.html">Hipnoterapijos Mokymai</a>
         <a class="down-button" href="#questions">&darr;</a>
       </section>
       <section id="questions" class="questions">
@@ -69,9 +84,11 @@
         <a href="#" onclick="return false;" class="question">
           <h2>Kiek prireikia sesijų vienos problemos sprendimui?</h2>
           <p>
-            Vienos problemos sprendimui paprastai reikia trijų sesijų. Kartais
-            pakanka vienos arba dviejų. Jei problema labai gili ir įsisenėjusi,
-            gali prireikti keturių sesijų.
+            Kiekvieno žmogaus psichika į terapiją reaguoja labai skirtingai.
+            Vienam tą pačią problemą galima išspręsti per porą sesijų, kitam
+            prireiks pusmečio. Taip pat priklauso nuo problemos sudėtingumo.
+            Tarkim įsisenėjęs, dešimtmečiais trunkantis nerimas arba depresija
+            spręsis ilgiau, nei, tarkim, viešojo kalbėjimo baimė.
           </p>
         </a>
         <a href="#" onclick="return false;" class="question">
@@ -86,8 +103,10 @@
           <h2>Kas vyksta pagrindinės sesijos metu?</h2>
           <p>
             Pagrindinės sesijos metu klientas įvedamas į lengvo atsipalaidavimo
-            būseną, surandamos problemos priežastys, blokai ir emociniai
-            įspaudai, jie perkoduojami ir transformuojami. Trukmė apie 90 min.
+            būseną, kuomet smegenų bangos pažemėja iki alfa arba teta būsenos.
+            Tada surandame problemos priežastis, blokus, emocinius įspaudus bei
+            ribojančius įsitikinimus. Galiausiai, juos perkoduojam ir
+            transformuojam. Trukmė iki 90 min.
           </p>
         </a>
         <a href="#" onclick="return false;" class="question">
@@ -101,10 +120,13 @@
           <h2>Kas apskritai yra hipnozė?</h2>
           <p>
             Hipnozė tai psichoterapinis metodas. Hipnozės metu klientas įvedamas
-            į lengvo atsipalaidavimo būseną, tačiau neužmigdomas ir gali
-            visiškai suvokti ir kontroliuoti situaciją, atsakinėti į klausimus,
-            vaikščioti po savo prisiminimus. Po hipnozės žmogus atsimena
-            absoliučiai viską, kas vyko hipnozės metu.
+            į lengvo atsipalaidavimo būseną, kuomet vyrauja alfa arba teta
+            smegenų bangos, tačiau neužmigdomas ir gali visiškai suvokti ir
+            kontroliuoti situaciją, atsakinėti į klausimus, vaikščioti po savo
+            prisiminimus. Po hipnozės žmogus atsimena absoliučiai viską, kas
+            vyko hipnozės metu. Kadangi hipnozės metu bendraujame tiesiogiai su
+            pasąmone, šios psichoterapijos pagalba galima labai efektyviai
+            išspręsti įvairias, jus kamuojančias problemas.
           </p>
           <iframe
             id="iframe1"
@@ -233,7 +255,9 @@
     </main>
     <footer>
       <h1>Regresine Hipnoterapija</h1>
-      <button class="ml-onclick-form" onclick="ml('show', '88RgQl', true)">Užsisakyti naujienlaiškį</button>
+      <button class="ml-onclick-form" onclick="ml('show', '88RgQl', true)">
+        Užsisakyti naujienlaiškį
+      </button>
       <div class="socials">
         <a
           rel="noopener noreferrer"

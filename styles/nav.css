@@ -37,13 +37,18 @@ nav h1 {
 
 @media only screen and (max-width: 960px) {
 
+nav .links {
+  justify-content: center;
+  align-items: center;
+}
+
 nav h1 {
   font-size: 1rem;
 }
 
 nav .links a {
   font-size: 16px;
-  margin-bottom: 20px;
+
 }
 
 }

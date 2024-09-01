@@ -35,6 +35,13 @@ footer h1 {
   background-color: white;
   border: 1px solid black;
   border-radius: 10px;
+  transition: 1s;
+}
+
+.ml-onclick-form:hover {
+  background-color: rgba(181, 176, 176, 0.992);
+  cursor: pointer; 
+  transition: 1s;
 }
 
 @media only screen and (min-width: 960px) and (max-width: 1171px) {
@@ -53,13 +60,17 @@ footer h1 {
 
   .ml-onclick-form {
     margin-top: 20px;
-    
   }
+
 }
 
 @media only screen and (max-width: 520px) {
   .socials {
     display: flex;
     flex-direction: column;
+  }
+
+  .fa-tiktok {
+    padding-bottom: 20px;
   }
 }

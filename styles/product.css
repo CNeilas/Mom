@@ -12,7 +12,7 @@
   -moz-box-shadow: -9px 15px 11px 5px rgba(0, 0, 0, 0.486);
   box-shadow: -5px 9px 5px 2px rgba(0, 0, 0, 0.486);
   background-color: white;
-  border-radius: 25px; 
+  border-radius: 25px;
 }
 
 .box-container {
@@ -20,19 +20,18 @@
   width: 100%;
 }
 
-.product:hover {
-  scale: 1.05;
-}
-
 .session-box {
-  background-color: gray;
   display: flex;
-  justify-content: start;
-  align-items: start;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
   width: 100%;
   min-height: 100vh;
+  gap: 30px;
   background-color: rgb(229, 229, 229);
+  padding: 20px;
+  
 }
 
 img {
@@ -173,6 +172,54 @@ img {
   background-position: center;
   background-size: cover;
 }
+.img14 {
+  width: 380px;
+  height: 380px;
+  border-radius: 20px;
+  background-image: url("../photo/regression.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.imgOne {
+  width: 380px;
+  height: 380px;
+  border-radius: 20px;
+  background-image: url("../photo/regression.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.imgTwo {
+  width: 380px;
+  height: 380px;
+  border-radius: 20px;
+  background-image: url("../photo/regression.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.imgThree {
+  width: 380px;
+  height: 380px;
+  border-radius: 20px;
+  background-image: url("../photo/regression.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.imgFour {
+  width: 380px;
+  height: 380px;
+  border-radius: 20px;
+  background-image: url("../photo/regression.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.imgFive {
+  width: 380px;
+  height: 380px;
+  border-radius: 20px;
+  background-image: url("../photo/regression.jpg");
+  background-position: center;
+  background-size: cover;
+}
 
 ul {
   text-align: left;
@@ -196,10 +243,42 @@ li {
 .button:hover {
   background-color: rgba(91, 126, 72, 0.827);
 }
+.personal .image {
+  margin-top: 20px;
+}
+
+.personal {
+  height: auto;
+}
+
+
+@media only screen and (min-width: 960px) {
+  .product:hover {
+    scale: 1.05;
+  }
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 960px) {
-  .box {margin-bottom: 20px;}
+  .box {
+    margin-bottom: 20px;
+  }
+  .button {
+    padding: 10px;
+    width: 80%;
+  }
+  .personal .image {
+    margin-top: 20px;
+    width: 90%;
+  }
+
+  .personal ul li {
+    font-size: 12px;
+  }
+
+  .session-box {
+    justify-content: center;
+  }
 }
 
 @media only screen and (min-width: 760px) and (max-width: 960px) {
@@ -219,7 +298,6 @@ li {
     margin: 0px;
     width: 40%;
   }
-
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 759px) {
