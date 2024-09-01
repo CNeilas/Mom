@@ -36,13 +36,13 @@ footer h1 {
     display: none;
   }
 
-
 }
 
 
 @media only screen and (max-width: 520px) {
-    footer .socials {
+     .socials {
     display: flex;
     flex-direction: column;
+
   }
 }

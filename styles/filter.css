@@ -49,12 +49,18 @@
 @media only screen and (max-width: 959px) {
   .filter {
     width: 90%;
+    height: 300px;
   }
 
-.filter-box {
+  .filter button {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .filter-box {
     width: 90%;
     margin-top: 30px;
-}
+  }
 
   .box-container {
     width: 100% !important;
@@ -62,5 +68,12 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
+  }
+
+  .filter-box {
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
