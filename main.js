@@ -59,43 +59,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
   
   // Initialize EmailJS
-(function () {
-  emailjs.init("DPiWXqQ7PD9pw3Ey8"); // Replace 'YOUR_USER_ID' with your actual EmailJS user ID
-})();
-
-// Add event listener for the contact form submission
-document
-  .getElementById("contact-form")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    // Send the form data using EmailJS
-    emailjs.sendForm("service_mz9jide", "template_dgbxb3r", this).then(
-      function (response) {
-        console.log("SUCCESS!", response.status, response.text);
-        alert("Your message has been sent successfully!");
-      },
-      function (error) {
-        console.log("FAILED...", error);
-        alert(
-          "There was an error sending your message. Please try again later."
-        );
-      }
-    );
-  });
+  (function () {
+    emailjs.init("DPiWXqQ7PD9pw3Ey8"); // Replace 'YOUR_USER_ID' with your actual EmailJS user ID
+  })();
   
-  //dropdown
-  document.querySelector('.menu-btn').addEventListener('click', function () {
-    document.querySelector('.links').classList.toggle('show');
-  });
-
-  // Optional: Close the menu when clicking outside of it
-  document.addEventListener('click', function (event) {
-    const isClickInside = document.querySelector('.menu-btn').contains(event.target);
-    const isLinksClick = document.querySelector('.links').contains(event.target);
-
-    if (!isClickInside && !isLinksClick) {
-      document.querySelector('.links').classList.remove('show');
-    }
-  });
-
+  // Add event listener for the contact form submission
+  document
+    .getElementById("contact-form")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+  
+      // Send the form data using EmailJS
+      emailjs.sendForm("service_mz9jide", "template_dgbxb3r", this).then(
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
+          alert("Your message has been sent successfully!");
+        },
+        function (error) {
+          console.log("FAILED...", error);
+          alert(
+            "There was an error sending your message. Please try again later."
+          );
+        }
+      );
+    });
+  
