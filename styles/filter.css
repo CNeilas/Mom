@@ -48,18 +48,13 @@
 
 @media only screen and (max-width: 959px) {
   .filter {
-    width: 90%;
-    height: 300px;
+    width: 80%;
+    height: auto;
   }
 
   .filter button {
     padding: 10px;
     font-size: 16px;
-  }
-
-  .filter-box {
-    width: 90%;
-    margin-top: 30px;
   }
 
   .box-container {
@@ -71,9 +66,12 @@
   }
 
   .filter-box {
+    width: 100%;
+    height: auto;
     margin-left: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
   }
 }
