@@ -1,0 +1,72 @@
+.review-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    text-align: center;
+    overflow: hidden; /* Hide overflow for swiping */
+  }
+  
+  .review-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .review-carousel {
+    position: relative; /* For positioning the buttons */
+    overflow: hidden; /* Hide content outside the carousel */
+  }
+  
+  .review-wrapper {
+    display: flex;
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+  }
+  
+  .review {
+    min-width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 0 10px; /* Margin between reviews */
+  }
+  
+  .review img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .review p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Carousel buttons */
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .review {
+      min-width: 90%; /* Full width on smaller screens */
+    }
+  }
+  
