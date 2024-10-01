@@ -1,9 +1,14 @@
+* {
+  box-sizing: border-box; /* Ensures consistent width and padding calculation */
+}
+
 footer {
   width: 100%;
   min-height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap; /* Ensure wrapping on smaller screens */
 }
 
 footer h1 {
@@ -13,8 +18,9 @@ footer h1 {
 .socials {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  height: 100px;
+  justify-content: center;
+  height: auto;
+  flex-wrap: wrap; /* Ensure wrapping when necessary */
 }
 
 .taisykles {
@@ -24,11 +30,7 @@ footer h1 {
 .socials a {
   text-decoration: none;
   color: black;
-  margin: 20px;
-}
-
-.socials a:nth-child(1) {
-  padding: 20px;
+  margin: 10px;
 }
 
 .socials a:hover {
@@ -40,41 +42,48 @@ footer h1 {
   border: 1px solid black;
   border-radius: 10px;
   transition: 1s;
+  padding: 10px;
 }
 
 .ml-onclick-form:hover {
   background-color: rgba(181, 176, 176, 0.992);
-  cursor: pointer; 
+  cursor: pointer;
   transition: 1s;
 }
 
-@media only screen and (min-width: 960px) and (max-width: 1171px) {
-  .ml-onclick-form {
-    font-size: 14px;
+@media only screen and (min-width: 961px) {
+  /* Socials in a row for larger screens */
+  .socials {
+    flex-direction: row; /* Keep socials in a row */
+    justify-content: center;
+  }
+
+  .socials a {
+    margin: 0 15px; /* Spacing between social media icons */
   }
 }
 
 @media only screen and (max-width: 960px) {
   footer h1 {
-    display: none;
+    display: none; /* Hide the main title on smaller screens */
   }
+
   footer {
-    flex-direction: column;
+    flex-direction: column; /* Stack everything vertically */
+  }
+
+  .socials {
+    flex-direction: column; /* Stack social media icons vertically */
+    align-items: center;
+    margin-top: 20px; /* Add space above the social icons */
+  }
+
+  .socials a {
+    margin: 10px 0; /* Add space between the icons */
   }
 
   .ml-onclick-form {
-    margin-top: 20px;
-  }
-
-}
-
-@media only screen and (max-width: 520px) {
-  .socials {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .fa-tiktok {
-    padding-bottom: 20px;
+    margin-top: 20px; /* Add space above the newsletter button */
   }
 }
+
