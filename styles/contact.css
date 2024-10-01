@@ -5,18 +5,21 @@
   font-size: 16px;
 }
 
+/* General Contact Section Styles */
 .contact-section {
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(229, 229, 229);;
+  background-color: rgb(229, 229, 229);
+  padding: 10px; /* Add some padding for smaller screens */
 }
 
 /* Contact Form Styles */
 .contact-form {
   width: 40%;
+  max-width: 500px;
   height: 60%;
   background: #fff;
   padding: 30px;
@@ -24,6 +27,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: 20px auto;
   text-align: center;
+  overflow: auto; /* Ensure content fits */
 }
 
 .contact-form h2 {
@@ -75,8 +79,27 @@
 
 
 
+/* Adjust for smaller screens */
 @media only screen and (max-width: 1000px) {
   .contact-form {
     width: 80%;
+    height: auto; /* Make the height dynamic */
+    padding: 20px;
+  }
+}
+
+/* Adjust for landscape mode on mobile devices */
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  .contact-section {
+    flex-direction: row; /* Align items horizontally */
+    justify-content: flex-start;
+  }
+
+  .contact-form {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    padding: 20px;
+    margin: 0 auto;
   }
 }
