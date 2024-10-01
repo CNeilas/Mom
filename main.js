@@ -125,4 +125,8 @@ document.addEventListener("DOMContentLoaded", function () {
       if (startX < endX - 50) showReview(currentIndex - 1); // Swipe right
     });
 
-    screen.orientation.lock("portrait");
+    if (screen.orientation && screen.orientation.lock) {
+      screen.orientation.lock('portrait').catch(function(error) {
+        console.log('Orientation lock not supported: ', error);
+      });
+    }
