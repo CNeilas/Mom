@@ -3,6 +3,7 @@
     background-color: #f9f9f9; /* Light background for contrast */
     text-align: center;
     overflow: hidden; /* Hide overflow for swiping */
+    width: 100%;
   }
   
   .review-section h2 {
@@ -66,7 +67,7 @@
   /* Responsive Design */
   @media (max-width: 768px) {
     .review {
-      min-width: 90%; /* Full width on smaller screens */
+      min-width: 100%; /* Full width on smaller screens */
     }
   }
   

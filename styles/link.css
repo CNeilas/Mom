@@ -1,0 +1,108 @@
+/* Main content styling, centered */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #e5e5e5;
+  min-height: 100vh;
+  margin-bottom: 2rem; /* Adds space for the footer */
+}
+
+  
+  /* Product Description Section */
+  .product-desc {
+    max-width: 900px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  /* Product Image */
+  .product-desc img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  /* Text Box Styling */
+  .product-desc .text-box {
+    max-width: 550px;
+  }
+  
+  .product-desc .text-box h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .product-desc .text-box p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+  }
+  
+  .product-desc .text-box p strong {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .product-desc .text-box p em {
+    color: #555;
+    font-style: italic;
+  }
+  
+  /* Price Wrapper */
+  .block-product__price-wrapper {
+    font-size: 1.4rem;
+    color: #444;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    /* Stack elements vertically on smaller screens */
+    .product-desc {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Full-width image on small screens */
+    .product-desc img {
+      max-width: 100%;
+    }
+  
+    /* Adjust text box width */
+    .product-desc .text-box {
+      max-width: 100%;
+      padding: 0 1rem;
+    }
+  
+    /* Adjust font sizes for smaller screens */
+    .product-desc .text-box h2 {
+      font-size: 1.5rem;
+    }
+  
+    .product-desc .text-box p {
+      font-size: 0.95rem;
+    }
+  
+    .block-product__price-wrapper {
+      font-size: 1.2rem;
+    }
+  }
+  
+  

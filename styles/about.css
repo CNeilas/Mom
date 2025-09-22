@@ -1,246 +1,185 @@
+/* Base styles */
 .about-me {
   background-color: rgb(229, 229, 229);
   width: 100%;
-  min-height: 100vh;
+  padding: 40px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .about-box {
-  margin-top: 20px;
-  border-top-right-radius: 3%;
-  border-bottom-right-radius: 3%;
-  border-top-left-radius: 3%;
-  border-bottom-left-radius: 3%;
-  max-width: 950px;
-  height: 520px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  -webkit-box-shadow: -9px 11px 5px 0px rgba(153, 153, 153, 1);
-  -moz-box-shadow: -9px 11px 5px 0px rgba(153, 153, 153, 1);
-  box-shadow: -9px 11px 10px 0px rgba(153, 153, 153, 1);
+  align-items: stretch;
+  max-width: 950px;
+  width: 100%;
+  box-shadow: -9px 11px 10px rgba(153, 153, 153, 1);
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+  min-height: 520px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .about-text {
-  border-top-right-radius: 3%;
-  border-bottom-right-radius: 3%;
-  width: 475px;
-  height: 100%;
-  background-color: #ffffff;
-  overflow-wrap: normal;
+  flex: 1 1 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 .about-text p {
   text-align: left;
-  padding: 15px;
   font-size: 16px;
-  line-height: 35px;
+  line-height: 1.6;
 }
 
 .about-text h2 {
   text-align: center;
-  padding: 10px;
   font-size: 30px;
-  line-height: 35px;
+  margin-bottom: 10px;
 }
 
 .about-image {
-  border-top-left-radius: 3%;
-  border-bottom-left-radius: 3%;
-  height: 100%;
-  width: 475px;
+  flex: 1 1 400px;
   background-image: url("../photo/about.jfif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 520px;
+  height: auto;
 }
 
 .link-button {
   background-color: white;
-  text-decoration: none;
   color: black;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
   margin-top: 20px;
-  width: 950px;
+  width: 100%;
+  max-width: 950px;
   height: 70px;
-  font-weight: 900;
-  font-size: 30px;
-  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 1s;
-  -webkit-box-shadow: -9px 11px 5px 0px rgba(153, 153, 153, 1);
-  -moz-box-shadow: -9px 11px 5px 0px rgba(153, 153, 153, 1);
-  box-shadow: -9px 8px 10px 0px rgba(153, 153, 153, 1);
   border-radius: 20px;
+  box-shadow: -9px 8px 10px rgba(153, 153, 153, 1);
+  transition: background-color 0.3s, transform 0.3s;
+  box-sizing: border-box;
 }
-
 
 .link-button:hover {
   background-color: rgb(229, 229, 229);
-  transition: 1s;
+  transform: scale(1.02);
 }
 
 .down-button {
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin: 30px 0;
   font-size: 30px;
   height: 50px;
   width: 50px;
   background-color: white;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   color: black;
-  border-radius: 50%;
-  -webkit-box-shadow: -9px 11px 5px 0px rgba(153, 153, 153, 1);
-  -moz-box-shadow: -9px 11px 5px 0px rgba(153, 153, 153, 1);
   box-shadow: -3px 4px 10px 5px rgba(153, 153, 153, 1);
-  transition: 1s;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .down-button:hover {
   background-color: #ffffff8f;
-  scale: 1.05;
-  transition: 1s;
+  transform: scale(1.05);
 }
 
-#iframe1 {
+#iframe1, #iframe2 {
   margin: 10px;
-  width: 920px;
+  width: 100%;
+  max-width: 950px;
+  height: auto;
+  box-sizing: border-box;
+}
+
+/* Responsive iframes */
+#iframe1 {
   height: 400px;
 }
 
 #iframe2 {
   height: 450px;
-  width: 950px;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 760px) {
-  .about-image {
-    border-top-left-radius: 3%;
-    border-top-right-radius: 3%;
-    border-bottom-left-radius: 0%;
+/* Media Queries */
+@media (max-width: 960px) {
+  .about-box {
+    flex-direction: column;
+    align-items: center;
+    min-height: unset;
+  }
+  .about-text, .about-image {
+    width: 100%;
+    flex: none;
   }
   .about-text {
-    border-bottom-left-radius: 3%;
-    border-bottom-right-radius: 3%;
-    border-top-right-radius: 0%;
+    padding: 15px;
   }
-}
-
-@media only screen and (min-width: 761px) and (max-width: 960px) {
-  .about-box {
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-    width: 610px;
-    height: 400px;
-  }
-
   .about-image {
-    width: 305px;
-    height: 100%;
-  }
-  .about-text p {
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  .link-button {
-    width: 610px;
-  }
-
-  #iframe1 {
-    margin: 10px;
-    width: 580px;
+    min-height: 300px;
     height: 300px;
   }
-
+  .link-button {
+    width: 100%;
+  }
+  #iframe1 {
+    height: 300px;
+  }
   #iframe2 {
     height: 300px;
-    width: 610px;
   }
 }
 
-@media only screen and (min-width: 521px) and (max-width: 760px) {
-  .about-box {
-    margin-top: 20px;
-    flex-direction: column;
-    width: 380px;
-    height: 700px;
-  }
-
+@media (max-width: 768px) {
   .about-text p {
-    font-size: 13px;
-    line-height: normal;
+    font-size: 15px;
   }
-
-  .about-image {
-    width: 380px;
+  .about-text h2 {
+    font-size: 26px;
   }
-
-  .about-text {
-    width: 380px;
-    height: 400px;
-  }
-
   .link-button {
-    width: 380px;
-    font-size: 24px;
+    font-size: 20px;
   }
-
-  #iframe1 {
-    margin: 10px;
-    width: 340px;
-    height: 200px;
+  .about-image {
+    height: 260px;
+    min-height: 260px;
   }
-
-  #iframe2 {
-    height: 250px;
-    width: 380px;
+  #iframe1, #iframe2 {
+    height: 240px;
   }
 }
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 520px) {
-  .about-box {
-    margin-top: 20px;
-    flex-direction: column;
-    width: 280px;
-    height: 600px;
-  }
 
-  .about-image {
-    width: 280px;
-  }
-
-  .about-text {
-    width: 280px;
-  }
-
+@media (max-width: 520px) {
   .about-text p {
-    font-size: 12px;
-    line-height: normal;
+    font-size: 14px;
   }
-
-  .link-button {
-    width: 280px;
-    font-size: 16px;
+  .about-text h2 {
+    font-size: 22px;
   }
-
-  #iframe1 {
-    margin: 10px;
-    width: 240px;
+  .about-image {
+    height: 220px;
+    min-height: 220px;
+  }
+  #iframe1, #iframe2 {
     height: 200px;
-  }
-
-  #iframe2 {
-    height: 200px;
-    width: 280px;
   }
 }

@@ -61,7 +61,7 @@
       "options": false
     },
     "text": {
-      "button": "Skaityti aprašymą"
+      "button": "Pirkti"
     }
   },
   "productSet": {
@@ -103,7 +103,7 @@
       }
     },
     "text": {
-      "button": "Add to cart"
+      "button": "Pirkti"
     }
   },
   "option": {},

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>About me</title>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script
       src="https://kit.fontawesome.com/40638f2f07.js"
@@ -32,6 +32,7 @@
       ml("account", "963089");
     </script>
     <!-- End MailerLite Universal -->
+
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
@@ -54,22 +55,63 @@
           <div class="about-text">
             <h2>Apie Mane</h2>
             <p>
-              Sveiki, mano vardas Viktorija, esu sertifikuota hipnoterapeutė
-              regresologė bei emocijų paleidimo trenerė. Taip pat lektorė ir
-              vertėja, bei, galiausiai, keturių vaikų mama. Taip pat vedu
-              hipnoterapijos metodikų mokymus. Padedu žmonėms išspręsti ir
-              transformuoti problemas pasąmoniniame lygmenyje ir sugrįžti į
-              tikrąjį save. Šiuo metu esu padėjusi jau daugiau nei šešiems
-              šimtams žmonių įveikti nerimą, baimes, sustiprinti savivertę,
-              išeiti iš toksinių santykių, ir tt. Tikiu, galiu padėti ir Tau.
+              Sveiki, mano vardas Viktorija, esu <br />
+              - sertifikuota hipnoterapeutė regresologė <br />
+              - emocijų paleidimo trenerė <br />
+              - ICU sertiffikuota koučerė <br />
+              - IFS (asmenybės dalių terapijos) praktikė <br />
+
+              Taip pat lektorė ir vertėja, bei, keliautoja. Taip pat vedu
+              hipnoterapijos metodikų ir kitų pasąmonės transformacijos metodikų
+              mokymus. Padedu žmonėms išspręsti ir transformuoti problemas
+              pasąmoniniame lygmenyje ir sugrįžti į tikrąjį save. Šiuo metu esu
+              padėjusi jau daugiau nei tūkstančiui žmonių įveikti nerimą,
+              baimes, sustiprinti savivertę, išeiti iš toksinių santykių, ir tt.
+              Tikiu, galiu padėti ir Tau.
             </p>
           </div>
         </div>
         <a class="link-button" href="sesijos.html">Sesijos</a>
         <a class="link-button" href="paslaugos.html">Parduotuvė</a>
-        <a class="link-button" href="kursai.html">Hipnoterapijos Mokymai</a>
+        <a class="link-button" href="kursai.html">Mokymai</a>
         <a class="down-button" href="#questions">&darr;</a>
+
+        <button class="main-button" onclick="openButtonBox()">
+          Nemokamos PDF knygos
+        </button>
+
+        <div id="popup-box" onclick="closeButtonBox(event)">
+          <div class="popup-content">
+            <button
+              class="ml-onclick-form"
+              onclick="ml('show', '9YHAC1', true)"
+            >
+              Nori gauti nemokamą gidą kaip sumažinti kortizolio lygį
+              natūraliais būdais? - spausk čia!
+            </button>
+            <button
+              class="ml-onclick-form"
+              onclick="ml('show', 'X3tDmw', true)"
+            >
+              Nemokamas pdf gidas "Kaip atpažinti ir palengvinti nerimą
+            </button>
+            <button
+              class="ml-onclick-form"
+              onclick="ml('show', 'Sjpdk6', true)"
+            >
+              14 Vizualizacijų gausai, santykiams, ramybei ir kt.
+            </button>
+            <button
+              class="ml-onclick-form"
+              onclick="ml('show', 'G9zAA1', true)"
+            >
+              Narcizai - kaip atpažinti ir apsisaugoti. Nemokamas pdf gidas.
+            </button>
+          </div>
+        </div>
       </section>
+      <!--MAILERLITE-->
+
       <section id="questions" class="questions">
         <a class="down-button" href="#about-me">&uarr;</a>
         <a href="#" onclick="return false;" class="question">
@@ -237,74 +279,57 @@
             <!-- Reviews from review1.jpg to review17.jpg -->
             <div class="review">
               <img src="./reviews/review-1.jpg" alt="Client review 1" />
-              
             </div>
             <div class="review">
               <img src="./reviews/review-2.jpg" alt="Client review 2" />
-              
             </div>
             <div class="review">
               <img src="./reviews/review-3.jpg" alt="Client review 3" />
-              
             </div>
             <!-- Continue with additional reviews up to review17.jpg -->
             <div class="review">
               <img src="./reviews/review-4.jpg" alt="Client review 4" />
-              
             </div>
             <div class="review">
               <img src="./reviews/review-5.jpg" alt="Client review 5" />
-              
             </div>
             <!-- Add more reviews as needed, up to review17 -->
             <div class="review">
               <img src="./reviews/review-6.jpg" alt="Client review 6" />
-              
             </div>
             <!-- You can repeat the structure up to review17 -->
             <div class="review">
               <img src="./reviews/review-7.jpg" alt="Client review 7" />
-              
             </div>
             <div class="review">
               <img src="./reviews/review-8.jpg" alt="Client review 8" />
-              
             </div>
             <div class="review">
               <img src="./reviews/review-9.jpg" alt="Client review 9" />
-              
             </div>
             <div class="review">
               <img src="./reviews/review-10.jpg" alt="Client review 10" />
-              
             </div>
             <div class="review">
               <img src="./reviews/review-11.jpg" alt="Client review 11" />
-              
             </div>
             <div class="review">
               <img src="./reviews/review-12.jpg" alt="Client review 12" />
-              
             </div>
             <div class="review">
               <img src="./reviews/review-13.jpg" alt="Client review 13" />
-              
             </div>
             <div class="review">
               <img src="./reviews/review-14.jpg" alt="Client review 14" />
-              
             </div>
             <div class="review">
               <img src="./reviews/review-15.jpg" alt="Client review 15" />
-              
             </div>
             <div class="review">
               <img src="./reviews/review-16.jpg" alt="Client review 16" />
-              
             </div>
             <div class="review">
               <img src="./reviews/review-17.jpg" alt="Client review 17" />
-              
             </div>
           </div>
           <!-- Navigation buttons -->
@@ -312,7 +337,7 @@
           <button class="carousel-btn next-btn">&#10095;</button>
         </div>
       </section>
-      
+
       <!-- Contact Form Section -->
       <section class="contact-section">
         <a class="down-button" href="#questions">&uarr;</a>
@@ -335,6 +360,7 @@
         </div>
       </section>
     </main>
+
     <footer>
       <h1>Regresine Hipnoterapija</h1>
       <a class="taisykles" href="taisykles.html">Sąlygos ir Taisyklės</a>
@@ -374,6 +400,7 @@
         ></a>
       </div>
     </footer>
+    <script src="review.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
